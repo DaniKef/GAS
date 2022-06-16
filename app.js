@@ -15,14 +15,14 @@ btnGet.addEventListener('click', (e)=>{
         .then(data => {
             console.log(data);
         })
-})
+});
 
-/*function addGotData(data) {
+function addGotData(data) {
     output.innerHTML = '';
     data.array.forEach(element => {
         output.innerHTML = '$<div>{element.first} ${element.second} ${element.third}</div>';
     });
-}*/
+}
 
 
 
