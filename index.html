@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GAS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="divForm">
+      <h6>Учет показаний счетчиков воды</h6>
+
+      <div class="divInput">
+        <div>
+          <p>Номер счета</p>
+          <input class="inputCounter" type="number">
+        </div>
+        <div>
+          <p>Горячая вода</p>
+          <input class="inputHot" type="number">
+        </div>
+        <div>
+          <p>Холодная вода</p>
+          <input class="inputCold" type="number">
+        </div>
+      </div>
+
+      <div class="divButton">
+        <button class="btnGetData">Получить</button>
+        <button class="btnPostData">Отправить</button>
+      </div>
+
+      <div class="output"></div>
+    </div>
+
+
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
