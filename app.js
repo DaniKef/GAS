@@ -1,4 +1,4 @@
-const url = 'https://script.google.com/macros/s/AKfycby-MZUuAKVGMph4z0Bmzq9C1GU0ltQOQsh6r30bAIYw125ggbP9gdzpfFybrjzK7Cnk3w/exec';
+const url = 'https://script.google.com/macros/s/AKfycbyWwgIIrYe21nWmrHMhMhGd5VyR5RZOvzLd7u0-pDXMtI0kmr3wW4eMVA5z8P4KzCDG/exec';
 
 const btnGet = document.querySelector('.btnGetData');
 const btnPost = document.querySelector('.btnPostData');
