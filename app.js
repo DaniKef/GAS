@@ -1,5 +1,5 @@
 const url  = 'https://script.google.com/macros/s/AKfycbyWwgIIrYe21nWmrHMhMhGd5VyR5RZOvzLd7u0-pDXMtI0kmr3wW4eMVA5z8P4KzCDG/exec';
-const url1 = 'https://script.google.com/macros/s/AKfycbyX6QuqZOQgw-CirWEVFnVwS9QPOjMu_-7httXus3ywwBPrnu8GX_7wgv6x85z83zoY/exec';
+const url1 = 'https://script.google.com/macros/s/AKfycbzXcnlKbPxMRVzHNoqCNXjhVwBPS_KkDGr-a2R4bSUyYst8Xyj6GV__LCokali7e8kbDg/exec';
 
 const btnGet = document.querySelector('.btnGetData');
 const btnPost = document.querySelector('.btnPostData');
@@ -37,13 +37,6 @@ function addGotData(data) {
 
 
 btnPost.addEventListener('click', (e)=>{
-   /* var myData = {
-        first: myCounter.value,
-        second: myCold.value,
-        third: myHot.value
-    };
-    const formData = new FormData();
-    formData.append('json', JSON.stringify(myData));*/
     const formData = new FormData();
     formData.append('row', myCounter.value);
     formData.append('second', myHot.value);
@@ -54,19 +47,24 @@ btnPost.addEventListener('click', (e)=>{
     })
         .then(res => res.json())          
         .then(data => {
-            console.log(data);
+            addPostData(data);
         })
 })
 
-/*btn.addEventListener('click', (e)=>{
-    const formData = new FormData();
-    formData.append('row', 2)
-    fetch(url,{
-        method: 'POST',
-        body: formData
-    })
-        .then(res => res.json())          
-        .then(data => {
-            console.log(data);
-        })
-})*/
+function addPostData(data) {
+    output.innerHTML = '';
+    output.innerHTML += "<p>Показания отправлены. </p>";
+}
+
+/*
+var servResponse = document.querySelector('#response');
+document.forms.ourForm.onsubmit = function(e) {
+    e.preventDefault();
+    var userInput = document.forms.ourForm.ourForm_inp.value;
+    userInput = encodeURIComponent(userInput);
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url1);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send('ourForm_inp=' + userInput);
+}
+*/
